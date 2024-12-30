@@ -1,0 +1,8 @@
+Github is a hosting service
+for hosting our code/files/data
+git is a cli tool free
+to perform version control
+
+study unix just to understand the oprations
+
+cd - change directory(folder) 

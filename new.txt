@@ -1,0 +1,6 @@
+file content 
+this is some content using nano text editor which is in terminal
+git init to make a empty repo
+then we can check the status using git status command
+then we will have to use git add ./filename to change the status of the file
+this command will stage the file 
