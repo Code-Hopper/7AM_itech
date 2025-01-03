@@ -159,30 +159,30 @@
 
 // key : value comma seprated
 
-let student = {
-    name: "amey khondekar",
-    roll: 12,
-    contact: 9766696550,
-    address: "sakkaradhara",
-    section: "FSD7AM",
-    doSomething: () => {
-        console.log("doing something !")
-    },
-    subject: ["Maths", "Science", "English"],
-    regular: true
-}
+// let student = {
+//     name: "amey khondekar",
+//     roll: 12,
+//     contact: 9766696550,
+//     address: "sakkaradhara",
+//     section: "FSD7AM",
+//     doSomething: () => {
+//         console.log("doing something !")
+//     },
+//     subject: ["Maths", "Science", "English"],
+//     regular: true
+// }
 
-for (let key in student ){
-    console.log(student[key])
-}
+// for (let key in student ){
+//     console.log(student[key])
+// }
 
-let [a,b,c] = [1,2,3]
+// let [a,b,c] = [1,2,3]
 
-console.log(a)
+// console.log(a)
 
-// member access oprator " . "
+// // member access oprator " . "
 
-student.regular = false
+// student.regular = false
 
 // console.log(student.name)
 // console.log(student.roll)
@@ -196,64 +196,64 @@ student.regular = false
 
 // array of objects
 
-let students = [
-    {
-        name: "student 1",
-        roll: 1,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 85
-    },
-    {
-        name: "student 2",
-        roll: 2,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 88
-    },
-    {
-        name: "student 3",
-        roll: 3,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 60
-    },
-    {
-        name: "student 4",
-        roll: 4,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 55
-    },
-    {
-        name: "student 5",
-        roll: 5,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 95
-    },
-    {
-        name: "student 6",
-        roll: 6,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 82
-    },
-    {
-        name: "student 7",
-        roll: 7,
-        contact: 9766696550,
-        address: "sakkaradhara",
-        section: "FSD7AM",
-        mark : 25
-    }
-]
+// let students = [
+//     {
+//         name: "student 1",
+//         roll: 1,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 85
+//     },
+//     {
+//         name: "student 2",
+//         roll: 2,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 88
+//     },
+//     {
+//         name: "student 3",
+//         roll: 3,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 60
+//     },
+//     {
+//         name: "student 4",
+//         roll: 4,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 55
+//     },
+//     {
+//         name: "student 5",
+//         roll: 5,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 95
+//     },
+//     {
+//         name: "student 6",
+//         roll: 6,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 82
+//     },
+//     {
+//         name: "student 7",
+//         roll: 7,
+//         contact: 9766696550,
+//         address: "sakkaradhara",
+//         section: "FSD7AM",
+//         mark : 25
+//     }
+// ]
 
 // console.log(students)
 
@@ -291,3 +291,82 @@ let students = [
 // }
 
 // console.log(students)
+
+// string manipulation
+
+let str1 = "123"
+
+// lenghth
+console.log(str1.length)
+
+// remove the spaces from the string leading and trailing porttions
+str1 = str1.trim()
+
+console.log(str1.length)
+
+// indexing in string
+// str1.charAt(index)
+
+// console.log(str1.charAt(19))
+// str1.indexOf("char")
+// it will return in index number of charchter if exists else return -1
+// it will also return the first occurence of the charchter present in the string
+
+// console.log(str1.indexOf("s"))
+// console.log(str1.lastIndexOf("s"))
+
+// console.log(str1.startsWith("was"))
+// console.log(str1.endsWith(" "))
+
+// let str2 = " this is also a string string2"
+
+// str1 = str1.concat(str2)
+
+// console.log(str1)
+
+// change the case of the string | upper and lower
+
+// console.log(str1)
+
+// str1 = str1.toLowerCase()
+// str1 = str1.toUpperCase()
+
+// console.log(str1)
+
+// can replace only the first occurene
+// str1 = str1.replace("THIS","THAT")
+
+// replace all occurene
+// str1 = str1.replaceAll("this","THAT")
+
+// console.log(str1)
+
+// slice and substring
+// divide into small parts based of indexes
+
+// str1.slice(startingIndex,endingIndex)
+
+// let fname = str1.slice(0,4)
+
+// return a section of the string
+// let fname = str1.slice(0,str1.indexOf(" "))
+
+// will not update the original string
+// rest is same
+// let fname = str1.substring(0,4)
+// console.log(fname)
+
+// let re = /[a-z][A-Z]/
+
+// let result = str1.match(re)
+
+// console.log(result)
+
+// toString()
+// String()
+
+// reverse of string
+
+// name sperator
+
+// change first letter of the word in a string
