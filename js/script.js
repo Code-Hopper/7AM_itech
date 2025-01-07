@@ -370,3 +370,4 @@ console.log(str1.length)
 // name sperator
 
 // change first letter of the word in a string
+
