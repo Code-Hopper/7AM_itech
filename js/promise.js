@@ -25,38 +25,83 @@
 // setInterval(()=>{},time) , setTimeout(()=>{},time)
 // 1000ms - 1s
 
-console.log('this is log 1')
+// console.log('this is log 1')
 
-let interval1 = setInterval(() => {
-    console.log("this statement will repeat in every 2s")
-}, 1000)
+// let interval1 = setInterval(() => {
+//     console.log("this statement will repeat in every 2s")
+// }, 1000)
 
-// document.getElementById("btn").onclick = () => { clearInterval(interval1) }
+// // document.getElementById("btn").onclick = () => { clearInterval(interval1) }
 
-console.log('this is log 2')
-
-
-console.log('this is log 3')
+// console.log('this is log 2')
 
 
-console.log('this is log 4')
+// console.log('this is log 3')
 
-setTimeout(() => {
-    console.log("this function has timeout of 3s !")
-}, 3000)
 
-async function promise1() {
+// console.log('this is log 4')
+
+// setTimeout(() => {
+//     console.log("this function has timeout of 3s !")
+// }, 3000)
+
+// async function promise1() {
+//     let newPromise = new Promise((resolved, rejected) => {
+//         setTimeout(
+//             () => { rejected("my promise is resolved"), 2000 }
+//         )
+//     })
+
+//     return newPromise
+// }
+
+// promise1().then((result) => {
+//     console.log("promise resolved !", result)
+// }).catch((err) => {
+//     console.error("promise rejected !", err)
+// });
+
+// async and await
+
+// let doSomething = async () =>{}
+
+async function doSomething() {
     let newPromise = new Promise((resolved, rejected) => {
-        setTimeout(
-            () => { rejected("my promise is resolved"), 2000 }
-        )
+
+        setTimeout(() => {
+
+            let x = 20
+
+            if (x < 30) {
+                resolved("my promise is resolved !")
+            } else {
+                rejected("my promise is rejected !")
+            }
+
+        }, 3000)
+
     })
 
     return newPromise
+
 }
 
-promise1().then((result) => {
-    console.log("promise resolved !", result)
-}).catch((err) => {
-    console.error("promise rejected !", err)
-});
+// doSomething().then((value) => {
+
+//     console.log("my promise ", value)
+
+// }).catch((err) => {
+//     console.error("my promise error", err);
+// })
+
+// await promise
+async function solvethis() {
+    try {
+        let result = await doSomething()
+        console.log(result)
+    } catch (err) {
+        console.error(err)
+    }
+}
+
+solvethis()
