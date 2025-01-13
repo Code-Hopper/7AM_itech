@@ -371,3 +371,4 @@ console.log(str1.length)
 
 // change first letter of the word in a string
 
+// this is some changes
